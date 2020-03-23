@@ -6,11 +6,11 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
-const Calc =props => {
+const Calc = props => {
   let n = props.number;
   let total =0;
   for (let i=0;i<=n;i++){
-    totak += i;
+    total += i;
   }
   return(
   <div>ゼロから{props.number}までの合計は「{total}」です。</div>
@@ -18,10 +18,10 @@ const Calc =props => {
 }
 
 Calc.defaultProps={
-  number=0
+  number: 0
 } 
 
-Calc.protoType={
+Calc.protoTypes={
   number: PropTypes.integer
 }
 
